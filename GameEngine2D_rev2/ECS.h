@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <list>
 #include <memory>
 #include <algorithm>
 #include <bitset>
@@ -55,7 +56,7 @@ public:
 class Entity
 {
 private:
-	Manager& manager;
+	const char* tag;
 	bool active = true;
 	std::vector<std::unique_ptr<Component>> componentList;
 
@@ -64,11 +65,16 @@ private:
 	GroupBitset groupBitset;
 
 public:
+	Manager& manager;
+
 	Entity(Manager& mManager) : manager(mManager) {}
 
 	void Update()
 	{
-		for (auto& c : componentList) c->Update();
+		for (auto& c : componentList)
+		{
+			c->Update();
+		}
 	}
 
 	void Draw()
@@ -120,12 +126,32 @@ public:
 		auto ptr(componentRA[getComponentTypeID<T>()]);
 		return *static_cast<T*>(ptr);
 	}
+
+	void setActive(bool state)
+	{
+		active = state;
+	}
+
+	void setTag(const char* t)
+	{
+		tag = t;
+	}
+
+	const char* getTag()
+	{
+		return tag;
+	}
+
+	bool isTagged()
+	{
+		return tag != NULL;
+	}
 };
 
 class Manager
 {
 private:
-	std::vector<std::unique_ptr<Entity>> entitiesList;
+	std::list<std::unique_ptr<Entity>> entitiesList; //Changed to list to eliminate access violation when vector reallocates after getting too large.
 	std::array<std::vector<Entity*>, maxGroups> groupedEntities;
 
 public:

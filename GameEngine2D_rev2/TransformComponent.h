@@ -2,7 +2,6 @@
 #include "ECS.h"
 #include "Vector2D.h"
 
-
 class TransformComponent : public Component
 {
 public:
@@ -10,6 +9,7 @@ public:
 	Vector2D scale;
 	Vector2D dimensions;
 	Vector2D velocity;
+	Vector2D origin;
 
 	int speed;
 
@@ -18,7 +18,17 @@ public:
 		position.Zero();
 	}
 
-	TransformComponent(int x, int y, int w, int h, float scaleX, float scaleY)
+	//This constructor only used by player? Don't like it. Non-reusable.
+	//Has been adapted to facilitate player center-of-screen with scrolling background.
+	//Eliminate to revert.
+	TransformComponent(int sc)
+	{
+		position.x = 400;
+		position.y = 320;
+		scale.x = scale.y = (float)sc;
+	}
+
+	TransformComponent(int x, int y, int w, int h, float scaleX, float scaleY, int origin)
 	{
 		position.x = (float)x;
 		position.y = (float)y;
@@ -30,13 +40,19 @@ public:
 		scale.y = (float)scaleY;
 
 		speed = 3;
+
+		SetOrigin(origin);
 	}
 
-	TransformComponent(Vector2D pos, Vector2D dim, Vector2D sca)
+	TransformComponent(Vector2D pos, Vector2D dim, Vector2D sca, int origin)
 	{
 		position = pos;
 		dimensions = dim;
 		scale = sca;
+
+		speed = 3;
+
+		SetOrigin(origin);
 	}
 
 	int x() { return (int)position.x; }
@@ -86,4 +102,59 @@ public:
 		position.y += velocity.y * speed;
 	}
 
+	void XYFromDegrees(float deg)
+	{
+		//Assume radius is 1
+		velocity = Vector2D(sin(deg), -cos(deg));
+	}
+
+	void SetOrigin(int originType)
+	{
+		Vector2D offset = CalculateOffset(originType);
+		position.x = position.x - ((dimensions.x * scale.x) * offset.x);
+		position.y = position.y - ((dimensions.y * scale.y) * offset.y);
+	}
+
+	Vector2D CalculateOffset(int originType)
+	{
+		Vector2D offsetScalar;
+		offsetScalar.Zero();
+		switch (originType) {
+		case 0:
+			//Do nothing. Spawns top left by default.
+			break;
+		case 1:
+			offsetScalar.x = 0.5;
+			break;
+		case 2:
+			offsetScalar.x = 1.0;
+			break;
+		case 3:
+			offsetScalar.y = 0.5;
+			break;
+		case 4:
+			offsetScalar.x = 0.5;
+			offsetScalar.y = 0.5;
+			break;
+		case 5:
+			offsetScalar.x = 1.0;
+			offsetScalar.y = 0.5;
+			break;
+		case 6:
+			offsetScalar.y = 1.0;
+			break;
+		case 7:
+			offsetScalar.x = 0.5;
+			offsetScalar.y = 1.0;
+			break;
+		case 8:
+			offsetScalar.x = 1.0;
+			offsetScalar.y = 1.0;
+			break;
+		default:
+			break;
+		}
+
+		return offsetScalar;
+	}
 };

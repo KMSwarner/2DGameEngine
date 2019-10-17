@@ -12,6 +12,7 @@ private:
 	SDL_Texture *texture;
 	SDL_Rect srcRect, destRect;
 
+	bool canDraw = false;
 	bool animated = false;
 	int frames = 0;
 	int speed = 100; //To be used as delay between frames in milliseconds
@@ -56,6 +57,9 @@ public:
 
 	void Init() override
 	{
+		//if (entity->getTag() == "particle")
+		//	std::cout << "Init particle sprite" << std::endl;
+
 		if (!entity->hasComponent<TransformComponent>())
 		{
 			entity->addComponent<TransformComponent>();
@@ -67,20 +71,29 @@ public:
 		srcRect.w = static_cast<int>(transform->dimensions.x);
 		srcRect.h = static_cast<int>(transform->dimensions.y);
 
+		destRect.x = transform->position.x;
+		destRect.y = transform->position.y;
 		destRect.w = static_cast<int>(transform->dimensions.x * transform->scale.x);
 		destRect.h = static_cast<int>(transform->dimensions.y * transform->scale.y);
+
+		//This is a blunt work-around. Find a way to fix the real issue, instead of simply skipping the first frame.
+		if (entity->getTag() != "particle")
+			canDraw = true;
 	}
 
 	void Update() override
 	{
+		//if (entity->getTag() == "particle")
+		//	std::cout << "Updating particle sprite";
+
 		if (animated)
 		{
 			srcRect.x = srcRect.w * static_cast<int>((SDL_GetTicks() / speed) % frames); //Animates independently of game's framerate
 		}
 		srcRect.y = animIndex * transform->dimensions.y;
 
-		destRect.x = static_cast<int>(transform->position.x);
-		destRect.y = static_cast<int>(transform->position.y);
+		destRect.x = static_cast<int>(transform->position.x) - Game::camera.x;
+		destRect.y = static_cast<int>(transform->position.y) - Game::camera.y;
 
 		destRect.w = static_cast<int>(transform->dimensions.x * transform->scale.x);
 		destRect.h = static_cast<int>(transform->dimensions.y * transform->scale.y);
@@ -88,7 +101,14 @@ public:
 
 	void Draw() override
 	{
+		//Somehow, particles are getting a compound translation involving the camera location offset. This error corrects itself on the second frame drawn.
+		//FIX IT!!
+		if (canDraw)
 		TextureManager::Draw(texture, srcRect, destRect, spriteFlip);
+		
+		//This is a rough fix to skip drawing on the first frame when the particle is out of place. This will likely cause problems in the future with physical particles.
+		if (entity->getTag() == "particle")
+			canDraw = true;
 	}
 
 	void Play(const char* animName)
@@ -97,5 +117,4 @@ public:
 		animIndex = animations[animName].index;
 		speed = animations[animName].playbackSpeed;
 	}
-
 };

@@ -6,3 +6,5 @@
 #include "TransformComponent.h"
 #include "KeyboardController.h"
 #include "TileComponent.h"
+#include "SelfDestructComponent.h"
+#include "ParticleSystemComponent.h"

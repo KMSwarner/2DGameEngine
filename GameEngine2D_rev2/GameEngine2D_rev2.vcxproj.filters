@@ -42,6 +42,9 @@
     <ClCompile Include="ECS.cpp">
       <Filter>Header Files\ECS</Filter>
     </ClCompile>
+    <ClCompile Include="ParticleSystemComponent.cpp">
+      <Filter>Header Files\ECS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -89,5 +92,17 @@
     <ClInclude Include="Animation.h">
       <Filter>Header Files\ECS</Filter>
     </ClInclude>
+    <ClInclude Include="SelfDestructComponent.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemComponent.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleModel.h">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Particle_Types.props" />
   </ItemGroup>
 </Project>

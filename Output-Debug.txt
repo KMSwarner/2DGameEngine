@@ -1,0 +1,101 @@
+﻿'GameEngine2D_rev2.exe' (Win32): Loaded 'E:\GameEngine Projects\GameEngine2D_rev2\Debug\GameEngine2D_rev2.exe'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'E:\GameEngine Projects\GameEngine2D_rev2\GameEngine2D_rev2\SDL2.dll'. Module was built without symbols.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140d.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32full.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp_win.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'E:\GameEngine Projects\GameEngine2D_rev2\GameEngine2D_rev2\SDL2_image.dll'. Module was built without symbols.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\win32u.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\setupapi.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\windows.storage.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\powrprof.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\fltLib.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Program Files\NVIDIA Corporation\nview\nviewH.dll'. Cannot find or open the PDB file.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dwmapi.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntmarta.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\clbcatq.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\MMDevAPI.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\propsys.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\avrt.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dinput8.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\hid.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\InputHost.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreMessaging.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WinTypes.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreUIComponents.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wintrust.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\XInput1_4.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\deviceaccess.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleacc.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\TextInputFramework.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\d3d9.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispwi.inf_amd64_3422686aeec24be0\nvldumd.dll'. Cannot find or open the PDB file.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imagehlp.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptsp.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rsaenh.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcrypt.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispwi.inf_amd64_3422686aeec24be0\nvd3dum.dll'. Cannot find or open the PDB file.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ResourcePolicyClient.dll'. Symbols loaded.
+The thread 0xc134 has exited with code 0 (0x0).
+'GameEngine2D_rev2.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\ResourcePolicyClient.dll'
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Program Files (x86)\NVIDIA Corporation\3D Vision\nvSCPAPI.dll'. Cannot find or open the PDB file.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gpapi.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptnet.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Program Files\NVIDIA Corporation\Ansel\Tools\NvCameraWhitelisting32.dll'. Cannot find or open the PDB file.
+'GameEngine2D_rev2.exe' (Win32): Unloaded 'C:\Program Files\NVIDIA Corporation\Ansel\Tools\NvCameraWhitelisting32.dll'
+'GameEngine2D_rev2.exe' (Win32): Loaded 'E:\GameEngine Projects\GameEngine2D_rev2\GameEngine2D_rev2\libpng16-16.dll'. Module was built without symbols.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'E:\GameEngine Projects\GameEngine2D_rev2\GameEngine2D_rev2\zlib1.dll'. Module was built without symbols.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\OneCoreCommonProxyStub.dll'. Symbols loaded.
+'GameEngine2D_rev2.exe' (Win32): Loaded 'C:\Windows\SysWOW64\actxprxy.dll'. Symbols loaded.
+The thread 0xf61c has exited with code 0 (0x0).
+The thread 0xbd40 has exited with code 0 (0x0).
+The thread 0xd298 has exited with code 0 (0x0).
+The thread 0xef34 has exited with code 0 (0x0).
+The thread 0x65f8 has exited with code 0 (0x0).
+The thread 0x812c has exited with code 0 (0x0).
+The thread 0xcf48 has exited with code 0 (0x0).
+The thread 0x4b40 has exited with code 0 (0x0).
+The thread 0x7d40 has exited with code 0 (0x0).
+The thread 0x4988 has exited with code 0 (0x0).
+The thread 0x4304 has exited with code 0 (0x0).
+The thread 0x5e2c has exited with code 0 (0x0).
+The thread 0xe8a0 has exited with code 0 (0x0).
+The thread 0x1434 has exited with code 0 (0x0).
+The thread 0xdc60 has exited with code 0 (0x0).
+The program '[51112] GameEngine2D_rev2.exe' has exited with code 0 (0x0).
